@@ -30,25 +30,92 @@ section#about ul {
 section#about ul li {
     margin-bottom: 10px;
 }
+.containe0 {
+    flex:1;
+}
+.containe0 img{
+  width: 917px;
+  height: 581px;
+}
+.containe {
+    flex:1;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.abc{
+  display: flex;
+  margin: 30px;
+  padding: 10px;
+}
+
 </style>
 </head>
 <body>
-
     <header>
-        <nav>
-          <div class="logo">
-            <h1 ><a style=" text-decoration: none;" href="index.html"> Fitline </a></h1>
-          </div>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="registration.php">Registration</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <div class="logo">
+          <h1 ><a style=" text-decoration: none;" href="index.html"> Fitline </a></h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="registration.php">Registration</a></li>
+          <li><a href="feedback.php">Feedback</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+      </nav>
+    </header>
 
 <section id="about">
     <div class="container">
@@ -84,6 +151,31 @@ section#about ul li {
         <p>Join us at Our Gym and discover the transformative power of fitness!</p>
     </div>
 </section>
+
+
+<div class="abc"><br>
+  <div class="containe0">
+    <img src="img/64b8e58ce7ffc183dd138d5e_pexels-thisisengineering-3912956.jpeg">
+  </div>
+  <div class="containe">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
 
 <footer>
     <div class="container">

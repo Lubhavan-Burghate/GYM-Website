@@ -33,7 +33,10 @@ if (!$conn) {
     // Execute SQL query
     if (mysqli_query($conn, $sql)) {
         // Registration successful
-        echo '<script>alert("Registration successful!");</script>';
+        echo '<script>alert("Registered successfully!");</script>';
+        // Redirect to index.html after 1 second
+        echo '<script>setTimeout(function(){ window.location.href = "index.html"; }, 1000);</script>';
+        exit(); 
     } else {
         // Registration failed
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
